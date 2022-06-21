@@ -1,0 +1,1155 @@
+2022-06-20 16:55:47 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: lockheedmartin)
+2022-06-20 16:55:47 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.7.6 (default, Jan  8 2020, 19:59:22) - [GCC 7.3.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-5.4.0-91-generic-x86_64-with-debian-bullseye-sid
+2022-06-20 16:55:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'lockheedmartin',
+ 'DOWNLOAD_DELAY': 0.4,
+ 'LOG_FILE': 'logs/lockheedmartin/lockheed/adbf81c8f0a011eca77f9d24f037a085.log',
+ 'NEWSPIDER_MODULE': 'lockheedmartin.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['lockheedmartin.spiders'],
+ 'TELNETCONSOLE_ENABLED': False,
+ 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, '
+               'like Gecko) Chrome/72.0.3626.96 Safari/537.36'}
+2022-06-20 16:55:47 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-06-20 16:55:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-20 16:55:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'lockheedmartin.middlewares.LockheedmartinDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-20 16:55:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'lockheedmartin.middlewares.LockheedmartinSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-20 16:55:47 [py.warnings] WARNING: /home/sev/anaconda3/lib/python3.7/site-packages/scrapy/utils/project.py:85: ScrapyDeprecationWarning: Use of environment variables prefixed with SCRAPY_ to override settings is deprecated. The following environment variables are currently defined: JOB, LOG_FILE, SLOT, SPIDER
+  ScrapyDeprecationWarning
+
+2022-06-20 16:55:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['lockheedmartin.pipelines.YoutubePipeline',
+ 'lockheedmartin.pipelines.LockheedmartinImagesPipeline',
+ 'lockheedmartin.pipelines.LockheedmartinPipeline']
+2022-06-20 16:55:47 [scrapy.core.engine] INFO: Spider opened
+2022-06-20 16:55:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-20 16:55:47 [lockheed] INFO: Spider opened: lockheed
+2022-06-20 16:55:47 [lockheed] INFO: Spider opened: lockheed
+2022-06-20 16:55:48 [filelock] DEBUG: Attempting to acquire lock 139721373871568 on /home/sev/.cache/python-tldextract/3.7.6.final__anaconda3__322406__tldextract-3.3.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-20 16:55:48 [filelock] INFO: Lock 139721373871568 acquired on /home/sev/.cache/python-tldextract/3.7.6.final__anaconda3__322406__tldextract-3.3.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-20 16:55:48 [filelock] DEBUG: Attempting to release lock 139721373871568 on /home/sev/.cache/python-tldextract/3.7.6.final__anaconda3__322406__tldextract-3.3.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-20 16:55:48 [filelock] INFO: Lock 139721373871568 released on /home/sev/.cache/python-tldextract/3.7.6.final__anaconda3__322406__tldextract-3.3.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-20 16:55:48 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://news.lockheedmartin.com/robots.txt> (referer: None)
+2022-06-20 16:55:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/news-releases> (referer: None)
+2022-06-20 16:55:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/06-16-22-Jordan-to-Join-F-16-Block-70-Program> (referer: https://news.lockheedmartin.com/news-releases)
+2022-06-20 16:55:49 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://news.lockheedmartin.com/image/F-16JordanImage.jpg> referred in <None>
+2022-06-20 16:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/06-16-22-Jordan-to-Join-F-16-Block-70-Program>
+{'image_urls': [{'checksum': 'fa104ffe08d6c2d82ed752f3733cd84f',
+                 'path': 'Jordan to Join F-16 Block 70 '
+                         'Program/550077f543f9e8d09adb71d56aeba0bc15df216f.jpeg',
+                 'status': 'uptodate',
+                 'url': 'https://news.lockheedmartin.com/image/F-16JordanImage.jpg'}],
+ 'text': 'Jordan has officially signed a Letter of Offer and Acceptance for '
+         'the sale of eight new production F-16 Block 70 aircraft. “This F-16 '
+         'acquisition reflects over 70 years of U.S. cooperation and decades '
+         'of partnership with Lockheed Martin,” says Aimee Burnett, vice '
+         'president, Integrated Fighter Group Business Development. “Our '
+         'history partnering with Jordan strengthens regional security and '
+         'helps protect citizens through 21 st Century Security technologies '
+         'that support critical missions today and into the future.” The '
+         'selection of new production F-16 aircraft extends Jordan’s existing '
+         'fleet of F-16s, bringing advanced capabilities to the mission '
+         'combined with affordable operating and lifecycle costs. Jordan’s new '
+         'F-16s will be built in Greenville, South Carolina, where Lockheed '
+         'Martin continues to hire for positions that work directly on '
+         'building and sustaining these jets. Visit '
+         'www.lockheedmartinjobs.com/Greenville for details.',
+ 'title': 'Jordan to Join F-16 Block 70 Program',
+ 'url': 'https://news.lockheedmartin.com/06-16-22-Jordan-to-Join-F-16-Block-70-Program',
+ 'youtube_urls': []}
+2022-06-20 16:55:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/news-releases?o=5> (referer: https://news.lockheedmartin.com/news-releases)
+2022-06-20 16:55:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-06-06-Lockheed-Martin-Names-New-Officers-for-the-Treasurer-and-Controller-Roles> (referer: https://news.lockheedmartin.com/news-releases)
+2022-06-20 16:55:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-06-06-Lockheed-Martin-Names-New-Officers-for-the-Treasurer-and-Controller-Roles>
+{'image_urls': [],
+ 'text': 'BETHESDA, Md. , June 6, 2022 / PRNewswire / -- Lockheed Martin '
+         '(NYSE: LMT) announced that its board of directors has elected\xa0'
+         'Evan T. Scott as vice president and treasurer, and H. Edward "Ed" '
+         'Paul, III as vice president and controller, effective '
+         'immediately.     Scott succeeds John Mollard , who has announced his '
+         'plans to retire at the end of the year after more than 39 years of '
+         'service to the company. Paul succeeds Brian Colan , who has also '
+         'announced his plans to retire later this year after more than 10 '
+         'years of service to the company. Both Mollard and Colan will serve '
+         'as strategic advisors until their retirements as part of paired '
+         'leadership transitions for the positions. "Evan and Ed\'s extensive '
+         'leadership experience within our global business and finance '
+         'operations will drive both continued excellence in our core finance '
+         'functions and focused execution of our growth strategy," said '
+         'Lockheed Martin Chairman, President and CEO James Taiclet . "I want '
+         'to thank John and Brian for their many contributions to the success '
+         'of the company over their decades of outstanding service." As vice '
+         "president and treasurer, Scott will lead the corporation's worldwide "
+         'banking activity, including global treasury operations, foreign '
+         'exchange and capital markets, rating agency relations, capital '
+         'planning, facilities and risk management. He also will oversee '
+         'financial planning and analysis and the LMC Properties subsidiary. '
+         'Scott began his career at Lockheed Martin in June 1999 and has '
+         'served as vice president and assistant treasurer since August 2021 . '
+         'During his more than 20-year career with the company, he has held '
+         'roles of increasing responsibility within the finance function. As '
+         "vice president and controller, Paul will lead the corporation's "
+         'accounting, government finance, global financial services and '
+         'financial transformation and systems functions. Paul brings '
+         'extensive experience partnering with executive management to develop '
+         "and deploy financial strategies that strengthen Lockheed Martin's "
+         'financial position, improve performance within our existing '
+         'businesses and expand into new areas. Paul joined the company in May '
+         '2011 and has served as vice president of accounting since March 2015 '
+         '. Prior to joining Lockheed Martin, Paul served in accounting and '
+         'audit roles at Discovery Communications, Inc. and Ernst & Young LLP '
+         'and is a certified public accountant. About Lockheed Martin '
+         'Headquartered in Bethesda, Maryland , Lockheed Martin Corporation is '
+         'a global security and aerospace company that employs approximately '
+         '114,000 people worldwide and is principally engaged in the research, '
+         'design, development, manufacture, integration and sustainment of '
+         'advanced technology systems, products and services. Please follow '
+         '@LMNews on Twitter for the latest announcements and news across the '
+         'corporation. SOURCE  Lockheed Martin',
+ 'title': 'Lockheed Martin Names New Officers for the Treasurer and Controller '
+          'Roles',
+ 'url': 'https://news.lockheedmartin.com/2022-06-06-Lockheed-Martin-Names-New-Officers-for-the-Treasurer-and-Controller-Roles',
+ 'youtube_urls': []}
+2022-06-20 16:55:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-06-08-Lockheed-Martin-Delivers-First-Five-Sentinel-A4-Air-and-Missile-Defense-Radars-to-US-Army-Providing-Improved-Capability-as-Part-of-the-Armys-Modernization-Efforts> (referer: https://news.lockheedmartin.com/news-releases)
+2022-06-20 16:55:51 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://news.lockheedmartin.com/image/Sentinel-A4-1.jpg> referred in <None>
+2022-06-20 16:55:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-06-08-Lockheed-Martin-Delivers-First-Five-Sentinel-A4-Air-and-Missile-Defense-Radars-to-US-Army-Providing-Improved-Capability-as-Part-of-the-Armys-Modernization-Efforts>
+{'image_urls': [{'checksum': 'c650f75c7f9947ea3c324bbe2b23cb46',
+                 'path': 'Lockheed Martin Delivers First Five Sentinel A4 Air '
+                         '& Missile Defense Radars to U.S. Army, Providing '
+                         'Improved Capability as Part of the Army’s '
+                         'Modernization '
+                         'Efforts/8a930198e7b831295f72954709c2a58a5ab2f795.jpeg',
+                 'status': 'uptodate',
+                 'url': 'https://news.lockheedmartin.com/image/Sentinel-A4-1.jpg'}],
+ 'text': 'Syracuse, N.Y. June 8, 2022 – On May 26, 2022, the STARE Project '
+         'Office, U.S. Army Sentinel Product Office received the first five '
+         'radars of its initial contract with Lockheed Martin. The Sentinel A4 '
+         'radar is developed and manufactured by Lockheed Martin in Syracuse, '
+         'N.Y., and has been on an accelerated schedule since the project was '
+         'awarded in September 2019. “We are one step closer to getting this '
+         'enhanced capability to our warfighters,” stated Leah Cook, Sentinel '
+         'Product Director for the U.S. Army Sentinel A4 program office. “The '
+         'delivery of the first five radars is a result of collaboration and a '
+         'continued commitment to the U.S. Army.” The U.S. Army and Lockheed '
+         'Martin have a strong partnership founded on collaboration and trust. '
+         'The process has included virtual reviews and working groups to '
+         'maintain momentum through all program development phases. “Our team '
+         'understands the criticality of this technology and the need to get '
+         'it fielded,” said Mark Mekker, director of Army Radars for Lockheed '
+         'Martin. “Our soldiers are in unpredictable environments, and the '
+         'Sentinel A4 will provide improved eyes on the field to keep them '
+         'safe.” What’s Next? Lockheed Martin will support the Army in the '
+         'government test program phase into early 2023. The radars will '
+         'undergo mobility, environmental, radar performance and logistics '
+         'testing. Production of the next five radar systems is already '
+         'underway, and delivery is expected to begin in March 2023. Future '
+         'Forward to Protect Against Evolving Threats The Sentinel A4’s open '
+         'scalable radar architecture is the cornerstone of the radar system’s '
+         'design and allows for addressing evolving threats with software '
+         'modifications only. The new air and missile defense radar will '
+         'provide improved capability over the previous iteration, the '
+         'Sentinel A3. It will outperform the legacy radar, delivering '
+         'improvements in contested environments against cruise missiles, '
+         'unmanned aerial systems, rotary wing and fixed wing aircraft, and '
+         'rocket, artillery, and mortar threats.\xa0 This includes enhanced '
+         'surveillance, detection, and classification capabilities to protect '
+         'U.S. Army maneuver formations. Efficiencies & Cost Savings Lockheed '
+         'Martin radars are designed with a high degree of commonality. The '
+         'company’s TPY-4 ground based air surveillance radar was built and '
+         'validated under Lockheed Martin investment and significantly '
+         'leveraged the Sentinel A4 radar design. “Commonality across the '
+         'radar portfolio enable sustainment efficiencies and significant cost '
+         'savings for our customers. Our scalable technology, coupled with '
+         'these efficiencies, has resulted in significant international '
+         'interest in both the Sentinel A4 and TPY-4 radars to replace older '
+         'assets that simply cannot be upgraded to match what our next '
+         'generation systems are offering,” said Chandra Marshall, Vice '
+         'President and General Manager of Lockheed Martin’s Radar and Sensor '
+         'Systems business. Lockheed Martin continues to invest significantly '
+         'in the advancement of its software-defined radar technology, '
+         'including its automated manufacturing processes which improves '
+         'quality and will lead to even further cost reductions. About '
+         'Lockheed Martin Headquartered in Bethesda, Maryland, Lockheed Martin '
+         'is a global security and aerospace company that employs '
+         'approximately 114,000 people worldwide and is principally engaged in '
+         'the research, design, development, manufacture, integration and '
+         'sustainment of advanced technology systems, products and services. '
+         'For additional information, visit our website: '
+         'www.lockheedmartin.com .',
+ 'title': 'Lockheed Martin Delivers First Five Sentinel A4 Air & Missile '
+          'Defense Radars to U.S. Army, Providing Improved Capability as Part '
+          'of the Army’s Modernization Efforts',
+ 'url': 'https://news.lockheedmartin.com/2022-06-08-Lockheed-Martin-Delivers-First-Five-Sentinel-A4-Air-and-Missile-Defense-Radars-to-US-Army-Providing-Improved-Capability-as-Part-of-the-Armys-Modernization-Efforts',
+ 'youtube_urls': []}
+2022-06-20 16:55:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/06-13-22-Lockheed-Martin-KAI-Sign-New-Teaming-Agreement-for-T-50-Opportunities> (referer: https://news.lockheedmartin.com/news-releases)
+2022-06-20 16:55:51 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://news.lockheedmartin.com/image/T-50+Teaming+Agreement.jpg> referred in <None>
+2022-06-20 16:55:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/06-13-22-Lockheed-Martin-KAI-Sign-New-Teaming-Agreement-for-T-50-Opportunities>
+{'image_urls': [{'checksum': '63b4b522cca395885fec4b2864d96c70',
+                 'path': 'Lockheed Martin, KAI Sign Teaming Agreement for '
+                         'Future T-50 '
+                         'Opportunities/4e6e5609a314a85e0d6e2d72eb006e7654fbdbf4.jpeg',
+                 'status': 'uptodate',
+                 'url': 'https://news.lockheedmartin.com/image/T-50+Teaming+Agreement.jpg'}],
+ 'text': 'Lockheed Martin and Korea Aerospace Industries (KAI) have signed a '
+         'teaming agreement for future T-50 opportunities, the newest '
+         'partnership in the decades-long relationship between the companies. '
+         '“Lockheed Martin is an air power solutions leader, delivering '
+         'capabilities across the entire spectrum of training and combat '
+         'aircraft,” says Aimee Burnett, vice president, Integrated Fighter '
+         'Group Business Development at Lockheed Martin. “We are proud to '
+         'continue to partner with KAI on the T-50 to leverage our collective '
+         'experiences to train the next generation of pilots to fly, fight and '
+         'win." She says the T-50 is a proven aircraft program that reduces '
+         'the learning curve for new pilots and gets them flying operational '
+         'sorties faster – even in fifth-generation aircraft like the F-35. '
+         'That’s important as air forces around the world need to get their '
+         'pilots up to speed faster than ever before, whether that’s to fill a '
+         'gap in personnel or due to increased frequency of combat missions. '
+         '“That’s where the benefits of the proven T-50 program really come '
+         'into play,” she says.\xa0“The seamless training experience with the '
+         'T-50 gives student pilots an additional edge and fully prepares them '
+         '– in less time than in the past – to fly any combat mission.” The '
+         'program has reduced the number of required flights for Korean pilots '
+         'learning in the KF-16 to only nine sorties. Feedback from many of '
+         'the 2,500 pilots who have been trained in the T-50 across 3,750 test '
+         'flights says it’s easy to fly and offers controls similar to other '
+         'Lockheed Martin aircraft like the F-16 and F-35. This allows student '
+         'pilots to focus their airmanship skills on improved aero '
+         'performance, digital flight controls and next-generation air traffic '
+         'management systems. Additionally, a ground-based training system '
+         'contains an array of innovative technologies to provide options for '
+         'training in a simulation environment. Digital Advances in '
+         'Production, Sustainment At any given time, around the world, '
+         'Lockheed Martin is working side-by-side with those in uniform to '
+         'keep fleets ready to fly at a moment’s notice. “We are focused on '
+         'readiness for the fleets and customers we support and bringing new '
+         'digital tools to enable new capabilities,” Aimee says. “And we’re '
+         'seeing success. As an example, with the T-50, the mission capable '
+         'rate is holding strong at 90% across 300,000 flight hours – an '
+         'outstanding result that demonstrates our focus.” And from a '
+         'production standpoint, T-50 components can be shipped to a single '
+         'location and produced with minimal space with maximum ease. That’s '
+         'because aircraft components would be shipped in two containers and '
+         'ready upon arrival in their home destination, for final assembly and '
+         'check-out. Additional T-50 Facts The T-50 program was originally '
+         'developed by KAI in partnership with Lockheed Martin, and took its '
+         'maiden flight in 2002 and its first production flight in 2005. Since '
+         'then, 208 have been produced with an additional 28 on order across a '
+         'number of aerobatic and combat variants including the T-50A, T-50B, '
+         'TA-50, and FA-50.',
+ 'title': 'Lockheed Martin, KAI Sign Teaming Agreement for Future T-50 '
+          'Opportunities',
+ 'url': 'https://news.lockheedmartin.com/06-13-22-Lockheed-Martin-KAI-Sign-New-Teaming-Agreement-for-T-50-Opportunities',
+ 'youtube_urls': []}
+2022-06-20 16:55:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-6-14-lockheed-martin-to-build-first-long-duration-energy-storage-system-for-us-army> (referer: https://news.lockheedmartin.com/news-releases)
+2022-06-20 16:55:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-6-14-lockheed-martin-to-build-first-long-duration-energy-storage-system-for-us-army>
+{'image_urls': [],
+ 'text': 'Andover, Mass., June 14, 2022 – Lockheed Martin (NYSE: LMT) has been '
+         'awarded a contract to build the first megawatt-scale, long-duration '
+         'energy storage system for the U.S. Department of Defense (DoD). '
+         'GridStar® Flow will be installed at Fort Carson, Colorado for the '
+         'U.S. Army under the management of the U.S. Army Engineer Research '
+         'and Development Center’s (ERDC) Construction Engineering Research '
+         'Laboratory (CERL). GridStar Flow is an innovative redox flow battery '
+         'designed for large-capacity storage applications that stores power '
+         'generated from renewable energy sources and dispatches it to '
+         'electric grids during peak demand or unanticipated electricity loss. '
+         "Lockheed Martin's first customer-sited production system is intended "
+         'as a demonstration unit for the Army and ERDC-CERL. This system will '
+         'be tested against protocols that simulate microgrid and renewable '
+         'integration to\xa0ensure critical missions can continue in the event '
+         'of a long-term power outage. It is expected to have a discharge '
+         'duration of 10 hours. “Electric grids are undergoing unprecedented '
+         'change.\xa0Energy requirements are shifting as we consider renewable '
+         'resources coupled with utility-scale, long-duration storage\xa0'
+         'options,” said Dr. Andrew J. Nelson, director, CERL. “Solutions to '
+         'increase resiliency and self-sufficiency are crucial to economically '
+         'and sustainably supporting DoD operations.” Insights gained from '
+         'this pilot project could support the deployment of future '
+         'long-duration storage across all DoD services and installations. “We '
+         'are committed to supporting the U.S. Army’s climate strategy to '
+         'foster modernization and readiness across the force, while seeking '
+         'out solutions that offer a more secure, sustainable and cleaner '
+         'future,” said Tom Jarvi, Lockheed Martin GridStar Flow program '
+         'director. “GridStar Flow is designed to meet emerging, long-duration '
+         'energy storage needs and bolster the necessary grid resilience to '
+         'combat 21 st century security challenges.” Lockheed Martin, '
+         'ERDC-CERL and the U.S Army plan to break ground on this GridStar '
+         'Flow project in the fall. About Lockheed Martin Headquartered in '
+         'Bethesda, Maryland, Lockheed Martin Corporation is a global security '
+         'and aerospace company that employs approximately 114,000 people '
+         'worldwide and is principally engaged in the research, design, '
+         'development, manufacture, integration and sustainment of advanced '
+         'technology systems, products, and services. Please follow @LMNews on '
+         'Twitter for the latest announcements and news across the corporation '
+         'and subscribe to Lockheed Martin Energy News .',
+ 'title': 'Lockheed Martin to Build First Long-Duration Energy Storage System '
+          'for U.S. Army',
+ 'url': 'https://news.lockheedmartin.com/2022-6-14-lockheed-martin-to-build-first-long-duration-energy-storage-system-for-us-army',
+ 'youtube_urls': []}
+2022-06-20 16:55:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-06-01-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-the-8th-Annual-UBS-Global-Industrials-and-Transportation-Conference> (referer: https://news.lockheedmartin.com/news-releases?o=5)
+2022-06-20 16:55:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-06-01-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-the-8th-Annual-UBS-Global-Industrials-and-Transportation-Conference>
+{'image_urls': [],
+ 'text': 'BETHESDA, Md. , June 1, 2022 / PRNewswire / -- Lockheed Martin '
+         '(NYSE: LMT) will webcast live a presentation by Chief Financial '
+         'Officer Jay Malave at the UBS Global Industrials and Transportation '
+         'Conference on Wednesday, June 8, 2022 at 11:20 a.m. to 12 noon EDT '
+         '.     Access to the webcast will be available at: '
+         'http://www.lockheedmartin.com/investor . An audio replay will be '
+         'available for two weeks following the presentation. About Lockheed '
+         'Martin Headquartered in\xa0Bethesda, Maryland , Lockheed Martin '
+         'Corporation is a global security and aerospace company that employs '
+         'approximately 114,000 people worldwide and is principally engaged in '
+         'the research, design, development, manufacture, integration and '
+         'sustainment of advanced technology systems, products and services. '
+         'Please follow @LMNews on Twitter for the latest announcements and '
+         'news across the corporation.  SOURCE  Lockheed Martin',
+ 'title': 'Lockheed Martin Chief Financial Officer to Speak at the 8th Annual '
+          'UBS Global Industrials and Transportation Conference',
+ 'url': 'https://news.lockheedmartin.com/2022-06-01-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-the-8th-Annual-UBS-Global-Industrials-and-Transportation-Conference',
+ 'youtube_urls': []}
+2022-06-20 16:55:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/news-releases?o=10> (referer: https://news.lockheedmartin.com/news-releases?o=5)
+2022-06-20 16:55:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-17-us-air-force-and-lockheed-martin-successfully-complete-arrw-hypersonic-boosted-test-flight> (referer: https://news.lockheedmartin.com/news-releases?o=5)
+2022-06-20 16:55:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-17-us-air-force-and-lockheed-martin-successfully-complete-arrw-hypersonic-boosted-test-flight>
+{'image_urls': [],
+ 'text': 'EDWARDS AIR FORCE BASE, Calif., May 17 2022 – The U.S. Air Force and '
+         'Lockheed Martin [NYSE: LMT] successfully conducted a '
+         'hypersonic-boosted flight test of the AGM-183A Air-launched Rapid '
+         'Response Weapon (ARRW) from the service’s B-52H Stratofortress. The '
+         'successful flight demonstrates the weapon’s ability to reach and '
+         'withstand operational hypersonic speeds, collect crucial data for '
+         'use in further flight tests, and validate safe separation from the '
+         'aircraft to deliver the glide body and warhead to designated targets '
+         'from significant standoff distances. “The need for hypersonic strike '
+         'capabilities is critical to our nation and this successful test will '
+         'help us to maintain an accelerated and rigorous timeline,” said Dave '
+         'Berganini, vice president of Hypersonic and Strike Systems at '
+         'Lockheed Martin Missiles and Fire Control. “Our strong partnership '
+         'with the U.S. Air Force has allowed us to quickly progress '
+         'hypersonic technologies for our men and women in uniform.” “The ARRW '
+         'rapid prototyping program used Section 804 authorities provided by '
+         'Congress to significantly accelerate the development and test of '
+         'this system, without sacrificing engineering rigor,” said Marya '
+         'Bard, U.S. Air Force ARRW program director. “The tightly integrated '
+         'Lockheed Martin and government team achieved speed with discipline '
+         'by focusing on a common vision of providing combatant commanders a '
+         'survivable rapid response strike capability as early as possible.” '
+         'Additional booster and all-up-round test flights will continue '
+         'throughout 2022, before reaching Early Operational Capability (EOC) '
+         'in 2023. Hypersonic weapons provide a rapid response, time critical '
+         'capability to overcome distance in contested environments using high '
+         'speed, altitude and maneuverability. Hypersonic technology has '
+         'continued to present several complex engineering challenges. Going '
+         'Mach 5, sometimes even faster, generates extreme levels of heat, '
+         'driving the need for innovative materials, sensors and electronics '
+         'to withstand such speeds throughout its journey. In addition to '
+         'heat, these systems must be able to maintain consistent '
+         'communication connections, as well as considerable intelligence to '
+         'perform precise maneuverability techniques to overcome a wide range '
+         'of advanced defense systems and extreme contested environments. '
+         'Lockheed Martin is proud to support multiple hypersonic systems '
+         'development projects and is leveraging resources, talents, and '
+         'lessons learned across the corporation to positively influence '
+         'outcomes. Playing a significant role in the research, development '
+         'and demonstration of hypersonic technologies for close to 60 years, '
+         'Lockheed Martin has invested in the development of critical '
+         'hypersonic technologies needed to enable operational systems to help '
+         'the US and its allies counter rapidly emerging threats. For '
+         'additional information, visit our website . About Lockheed Martin '
+         'Headquartered in Bethesda, Maryland, Lockheed Martin Corporation is '
+         'a global security and aerospace company that employs approximately '
+         '114,000 people worldwide and is principally engaged in the research, '
+         'design, development, manufacture, integration and sustainment of '
+         'advanced technology systems, products and services. Please follow '
+         '@LMNews on Twitter for the latest announcements and news across the '
+         'corporation.',
+ 'title': 'U.S. Air Force and Lockheed Martin Successfully Complete ARRW '
+          'Hypersonic Boosted Test Flight',
+ 'url': 'https://news.lockheedmartin.com/2022-05-17-us-air-force-and-lockheed-martin-successfully-complete-arrw-hypersonic-boosted-test-flight',
+ 'youtube_urls': []}
+2022-06-20 16:55:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-18-Built-in-Arkansas-LMXT-Strategic-Tanker-Boom-Refueling-System-to-be-Produced-in-Western-Arkansas> (referer: https://news.lockheedmartin.com/news-releases?o=5)
+2022-06-20 16:55:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-18-Built-in-Arkansas-LMXT-Strategic-Tanker-Boom-Refueling-System-to-be-Produced-in-Western-Arkansas>
+{'image_urls': [],
+ 'text': 'Opportunity brings highly skilled aerospace manufacturing work to '
+         'Arkansas BETHESDA, Md. , May 18, 2022 / PRNewswire / -- Lockheed '
+         'Martin (NYSE: LMT) and Airbus leaders announced today the aerial '
+         'refueling boom system for the LMXT strategic tanker aircraft will be '
+         'manufactured by Airbus in\xa0western Arkansas . Introduced in\xa0'
+         "September 2021, the LMXT is Lockheed Martin's offering for the U.S. "
+         'Air Force\'s KC-Y strategic tanker program.     "Given the '
+         "undisputed importance of the U.S. Air Force's strategic refueling "
+         'mission, ensuring the LMXT is equipped with critical and relevant '
+         'technologies for its refueling system is of paramount importance. '
+         'Like the LMXT airframe, this refueling system is proven and '
+         'low-risk, translating to known and added capabilities for the U.S. '
+         'Air Force," said Lockheed Martin Chairman, President, and CEO\xa0'
+         'James Taiclet. "With this commitment, Arkansas\' manufacturing '
+         "community has the opportunity to contribute to building America's "
+         'next strategic tanker." The LMXT is built on the combat-proven '
+         'design of the\xa0Airbus A330 Multi Role Tanker Transport (MRTT),\xa0'
+         'which is the strategic tanking choice of 14 nations around the '
+         'world. Offering several distinct U.S. Air Force-only capabilities '
+         'designed to meet operator requirements, the LMXT offers advantages '
+         'like\xa0an established fly-by-wire aerial refueling boom. Currently '
+         'certified and used by allies to refuel U.S. Air Force aircraft in '
+         "operations globally, the world's first fully automatic air-to-air "
+         'refueling (A3R) system is a discrete asset. "We are excited to '
+         'continue expanding our U.S. footprint by partnering with the state '
+         'of Arkansas to create the LMXT refueling boom production site and '
+         'center of excellence. It is an honor to bring Airbus innovation to '
+         'the state for this and future manufacturing opportunities," said '
+         'C.\xa0Jeffrey Knittel, chairman and CEO of Airbus Americas. "The '
+         'state-of-the-art boom system is a vital aspect of the overall LMXT '
+         'offering, and we are proud to be working with Arkansans to build '
+         'this best-in-class solution for the U.S. Air Force." While the exact '
+         'location of the manufacturing facility has yet to be determined, it '
+         'will expand Airbus\' footprint into "The Natural State." '
+         'Manufacturing plays a significant role in the Arkansas economy, '
+         "accounting for about 15% of the state's economic output. More than "
+         '12% of all Arkansas residents are employed by the manufacturing '
+         'industry, according to the Arkansas Economic Development Commission. '
+         '"Lockheed Martin consistently sets the standard for aerospace and '
+         "defense worldwide and significantly contributes to Arkansas' robust "
+         'aerospace and defense industry," said Arkansas Gov. Asa Hutchinson . '
+         '" Arkansas has the tools in place to help high-tech manufacturing '
+         "succeed, and I'm pleased that Lockheed Martin and Airbus see "
+         'themselves growing here in our state as they look to the future in '
+         'the defense industry." Lockheed Martin\'s manufacturing presence in '
+         'Arkansas dates back to 1978 with its Camden Operations facility. '
+         'This facility is a manufacturing, final assembly, test and storage '
+         'operation for Lockheed Martin Missiles and Fire Control (MFC) '
+         "programs. Approximately 1,030 employees work in the facility's "
+         'manufacturing and support buildings. "I am thrilled Arkansas has '
+         "been selected to manufacture the LMXT's boom, bringing well-paying "
+         'jobs to our state and strengthening our economy. Most importantly, '
+         "I'm proud Arkansas will continue to increase our contributions in "
+         "support of America's men and women in uniform and our national "
+         'defense," said U.S. Sen. John Boozman , who serves as the senior '
+         'senator from Arkansas. The LMXT aerial refueling system work is the '
+         'first manufacturing opportunity for Airbus in Arkansas , but builds '
+         'on an extensive manufacturing presence across the southeastern '
+         'United States . Airbus builds the A320 and A220 airliners in Alabama '
+         ', H125 and UH-72 Lakota helicopters in Mississippi , and satellites '
+         'in Florida . The workforce across these facilities is more than 30% '
+         'U.S. military veterans. "Flights of freedom will be sustained by '
+         'equipment made right here in Arkansas ! This announcement further '
+         "strengthens the Third District's role in our nation's defense, and "
+         "our community's strong workforce and infrastructure are ready to "
+         'support the manufacturing of the state-of-the-art LMXT system," said '
+         "U.S. Rep. Steve Womack , who represents Arkansas' 3rd Congressional "
+         'District. "Arkansans are proud knowing the leading role they\'ll '
+         "have in building the next generation of the Air Force's "
+         "capabilities. I look forward to a fair and open competition that I'm "
+         'sure the LMXT will win." This announcement follows Lockheed '
+         "Martin's and Airbus' recently publicized plan to expand their "
+         'footprints in Georgia and Alabama to support future LMXT assembly '
+         'and configuration. The\xa0 LMXT will be built in two phases: '
+         'Integration of the Arkansas -built boom will be included in Phase 2 '
+         'of the assembly and configuration process. The LMXT complements the '
+         "U.S. Air Force's tanker capabilities by providing the most advanced "
+         "aerial refueler to meet America's immediate and long-term mission "
+         'requirements. The LMXT strengthens and expands the U.S. aerospace '
+         'industrial base by working with existing and new American suppliers. '
+         '"Arkansans are proud of the men and women who fight for our freedoms '
+         'and the civilian workers who support them," Arkansas Secretary of '
+         'Commerce Mike Preston said. "The LMXT tanker will be built in '
+         'America, by Americans, for Americans — a mission that Arkansas '
+         'encourages all manufacturers to embrace as we seek to bring quality '
+         'jobs back to the U.S.A. and increase economic opportunities for '
+         'American workers and American communities." The LMXT offers a proven '
+         'airframe with distinct U.S. Air Force-only capabilities designed to '
+         'meet operator requirements, with advantages that also include: As '
+         'the prime contractor, Lockheed Martin works directly to implement '
+         'U.S. Air Force-specific requirements within the LMXT. For additional '
+         'information, visit the LMXT website: www.lockheedmartin.com/lmxt . '
+         'About Lockheed Martin Headquartered in Bethesda, Maryland , Lockheed '
+         'Martin (NYSE: LMT) is a global security and aerospace company that '
+         'employs approximately 114,000 people worldwide and is principally '
+         'engaged in the research, design, development, manufacture, '
+         'integration and sustainment of advanced technology systems, products '
+         'and services. Please follow @LMNews on Twitter for the latest '
+         'announcements and news across Lockheed Martin.     SOURCE  Lockheed '
+         'Martin Aeronautics',
+ 'title': 'Built in Arkansas:  LMXT Strategic Tanker Boom Refueling System to '
+          'be Produced in Western Arkansas',
+ 'url': 'https://news.lockheedmartin.com/2022-05-18-Built-in-Arkansas-LMXT-Strategic-Tanker-Boom-Refueling-System-to-be-Produced-in-Western-Arkansas',
+ 'youtube_urls': []}
+2022-06-20 16:55:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-23-US-Navy-Commissions-Littoral-Combat-Ship-21-Minneapolis-Saint-Paul> (referer: https://news.lockheedmartin.com/news-releases?o=5)
+2022-06-20 16:55:54 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://news.lockheedmartin.com/image/LCS-21-Commissioning-1-custom_700x700.jpg> referred in <None>
+2022-06-20 16:55:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-23-US-Navy-Commissions-Littoral-Combat-Ship-21-Minneapolis-Saint-Paul>
+{'image_urls': [{'checksum': '606ad6882033cc31d2fbf1ec504e6798',
+                 'path': 'U.S. Navy Commissions Littoral Combat Ship 21 '
+                         '(Minneapolis-Saint '
+                         'Paul)/c5057d7b47bb1755dfc52f7349df0b1d2250cf37.jpeg',
+                 'status': 'uptodate',
+                 'url': 'https://news.lockheedmartin.com/image/LCS-21-Commissioning-1-custom_700x700.jpg'}],
+ 'text': 'Duluth, Minn., May 23, 2022 – The U.S. Navy commissioned Littoral '
+         'Combat Ship (LCS) 21, USS Minneapolis-Saint Paul – the nation’s '
+         'eleventh Freedom-variant LCS – in Port of Duluth, Minnesota. This '
+         'milestone places the ship, built by the Lockheed Martin- (NYSE: LMT) '
+         'led team into active service with the U.S. Navy. “The versatility, '
+         'adaptability and relevance USS Minneapolis-Saint Paul will bring to '
+         'the fleet is unmatched. LCS 21 is ready for tomorrow’s threats, '
+         'providing her crew the ability to flexibly deploy advanced '
+         'capabilities that will deter our adversaries,” said Jon Rambeau, '
+         'vice president and general manager of Integrated Warfare Systems and '
+         'Sensors at Lockheed Martin. Unique among combat ships, LCS is '
+         'deployed today for close-to-shore missions and is a growing and '
+         'relevant part of the Navy’s fleet. In the last year, Freedom-variant '
+         'Littoral Combat ships have supported the Navy on various missions '
+         'including several counter-illicit drug trafficking deployments in '
+         'the Caribbean and Eastern Pacific resulting in hundreds of millions '
+         'of dollars in narcotics seizures. Its speed, strength and '
+         'versatility make it a critical tool to help sailors achieve their '
+         'missions. Recently, the Freedom-class Littoral Combat Ship for the '
+         'first time deployed to U.S. 6th Fleet as a measure of assurance for '
+         'NATO allies and partners in Europe and Africa. Minneapolis-Saint '
+         'Paul was launched and christened on June 15, 2019. The ship '
+         'completed acceptance trials on Aug. 21, 2020, and was delivered to '
+         'U.S. Navy on Nov. 18, 2021. Minneapolis-Saint Paul is the second '
+         'naval ship to honor Minnesota’s Twin Cities. USS Minneapolis-Saint '
+         'Paul will be homeported at Naval Station Mayport, Florida. The '
+         'Lockheed Martin-led LCS team is comprised of shipbuilder Fincantieri '
+         'Marinette Marine, naval architect Gibbs & Cox, and more than 800 '
+         'suppliers in 42 states. Built at the Midwest’s only naval shipyard, '
+         'LCS production supports 12,500 U.S. jobs, including more than 7,500 '
+         'jobs in Wisconsin and Michigan. Lockheed Martin is in full-rate '
+         'production and has delivered 11 ships to the U.S. Navy. There are '
+         'five ships in various stages of production. Additional photos from '
+         'the event may be viewed here . About the Littoral Combat Ship (LCS) '
+         'The\xa0Freedom-variant Littoral Combat Ship\xa0is a resilient, '
+         'flexible warship, designed from the keel up to affordably take on '
+         'new capabilities including advanced sensors, missiles and '
+         'cutting-edge cyber systems. Its speed, strength and versatility make '
+         'it a critical tool to help sailors achieve their missions. For more '
+         'information, please visit www.lockheedmartin.com/lcs . About '
+         'Lockheed Martin Headquartered in Bethesda, Maryland, Lockheed Martin '
+         'Corporation is a global security and aerospace company that employs '
+         'approximately 114,000 people worldwide and is principally engaged in '
+         'the research, design, development, manufacture, integration and '
+         'sustainment of advanced technology systems, products and services. '
+         'Please follow @LMNews on Twitter for the latest announcements and '
+         'news across the corporation. ',
+ 'title': 'U.S. Navy Commissions Littoral Combat Ship 21 (Minneapolis-Saint '
+          'Paul)',
+ 'url': 'https://news.lockheedmartin.com/2022-05-23-US-Navy-Commissions-Littoral-Combat-Ship-21-Minneapolis-Saint-Paul',
+ 'youtube_urls': []}
+2022-06-20 16:55:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-26-Lockheed-Martin-Chairman,-President-and-CEO-and-CFO-to-Speak-at-the-Bernstein-38th-Annual-Strategic-Decisions-Conference> (referer: https://news.lockheedmartin.com/news-releases?o=5)
+2022-06-20 16:55:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-26-Lockheed-Martin-Chairman,-President-and-CEO-and-CFO-to-Speak-at-the-Bernstein-38th-Annual-Strategic-Decisions-Conference>
+{'image_urls': [],
+ 'text': 'BETHESDA, Md. , May 26, 2022 / PRNewswire / -- Lockheed Martin '
+         '(NYSE: LMT) will webcast live a presentation by Chairman, President '
+         'and CEO Jim Taiclet and CFO Jay Malave at the Bernstein 38 th Annual '
+         'Strategic Decisions Conference on Thursday, June 2, 2022 at 9:00 '
+         'a.m. to 9:50 a.m. EDT .     Access to the webcast will be available '
+         'at: http://www.lockheedmartin.com/investor . An audio replay will be '
+         'available for two weeks following the presentation. About Lockheed '
+         'Martin Headquartered in\xa0Bethesda, Maryland , Lockheed Martin '
+         'Corporation is a global security and aerospace company that employs '
+         'approximately 114,000 people worldwide and is principally engaged in '
+         'the research, design, development, manufacture, integration and '
+         'sustainment of advanced technology systems, products and services. '
+         'Please follow @LMNews on Twitter for the latest announcements and '
+         'news across the corporation. SOURCE  Lockheed Martin',
+ 'title': 'Lockheed Martin Chairman, President and CEO and CFO to Speak at the '
+          'Bernstein 38th Annual Strategic Decisions Conference',
+ 'url': 'https://news.lockheedmartin.com/2022-05-26-Lockheed-Martin-Chairman,-President-and-CEO-and-CFO-to-Speak-at-the-Bernstein-38th-Annual-Strategic-Decisions-Conference',
+ 'youtube_urls': []}
+2022-06-20 16:55:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-16-us-army-awards-contracts-for-javelin-anti-tank-weapon-systems> (referer: https://news.lockheedmartin.com/news-releases?o=10)
+2022-06-20 16:55:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-16-us-army-awards-contracts-for-javelin-anti-tank-weapon-systems>
+{'image_urls': [],
+ 'text': 'ORLANDO , Fla., May 16, 2022 – The U.S. Army recently awarded the '
+         'Javelin Joint Venture two production contracts for Javelin missiles '
+         'and associated equipment and services with total value of $309 '
+         'million. These contracts include more than 1300 Javelin missiles '
+         'funded from the recent Ukraine Supplemental Appropriations Act and '
+         'orders for several international customers including Norway, '
+         'Albania, Latvia and Thailand. Javelin is developed and produced by '
+         'the Javelin Joint Venture, a partnership of Raytheon Missiles & '
+         'Defense and Lockheed Martin. The versatile anti-tank and '
+         'multi-target guided missile system offers fire-and-forget capability '
+         'over its full range – up to 4 kilometers in most operational '
+         'conditions. “The Javelin Joint Venture is working hard to meet this '
+         'increase in demand,” says Dave Pantano, Javelin Joint Venture vice '
+         'president and Lockheed Martin Javelin program director. “Javelin’s '
+         'unique capabilities have proven to be a difference-maker in our '
+         'users’ defining moments, and we look forward to continuing our '
+         'partnership with the Army to deliver this critical weapon system.” '
+         '“We remain committed to delivering this exceptional weapon system to '
+         'warfighters around the globe,” said Marek Wolert, Javelin Joint '
+         'Venture president and program director at Raytheon Missiles & '
+         'Defense. “Raytheon is working proactively with our supply chain to '
+         'ensure our readiness and ability to support this urgent need.” '
+         'Lockheed Martin is investing to increase the missile production rate '
+         'beyond the current 2,100 per year. Likewise, Raytheon is investing '
+         'to maximize production of the reusable light-weight command launch '
+         'unit. To date, the Javelin Joint Venture has produced more than '
+         '50,000 Javelin missiles and more than 12,000 reusable Command Launch '
+         'Units. Javelin is expected to remain in the U.S. weapon arsenal '
+         'until 2050 and is subject to continual upgrades to retain overmatch '
+         'against emerging threats and to support evolving operational needs. '
+         'About Lockheed Martin Headquartered in Bethesda, Maryland, Lockheed '
+         'Martin Corporation is a global security and aerospace company that '
+         'employs approximately 114,000 people worldwide and is principally '
+         'engaged in the research, design, development, manufacture, '
+         'integration and sustainment of advanced technology systems, products '
+         'and services. Please follow @LMNews on Twitter for the latest '
+         'announcements and news across the corporation. About Raytheon '
+         'Missiles & Defense Raytheon Missiles & Defense brings global '
+         'customers the most advanced end-to-end solutions delivering the '
+         'advantage of one innovative partner to detect, track, and intercept '
+         'threats. With a broad portfolio of air and missile defense systems, '
+         'precision weapons, radars, command and control systems and advanced '
+         'defense technologies Raytheon Missiles & Defense solutions protect '
+         'citizens, warfighters and infrastructure in more than fifty '
+         'countries around the world. Media Contacts : Cristina Vite, +1 '
+         '407-760-4610\xa0; cristina.n.vite@lmco.com Allison Smith, +1 '
+         '571-228-9527\xa0; allison.j.smith@lmco.com Carolyn Beaudry, +1 '
+         '401-339-6280\xa0; carolyn.beaudry@rtx.com',
+ 'title': 'U.S. Army Awards Contracts for Javelin Anti-Tank Weapon Systems',
+ 'url': 'https://news.lockheedmartin.com/2022-05-16-us-army-awards-contracts-for-javelin-anti-tank-weapon-systems',
+ 'youtube_urls': []}
+2022-06-20 16:55:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/news-releases?o=15> (referer: https://news.lockheedmartin.com/news-releases?o=10)
+2022-06-20 16:55:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-05-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-Goldman-Sachs-Industrials-and-Materials-Conference> (referer: https://news.lockheedmartin.com/news-releases?o=10)
+2022-06-20 16:55:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-05-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-Goldman-Sachs-Industrials-and-Materials-Conference>
+{'image_urls': [],
+ 'text': 'BETHESDA, Md. , May 5, 2022 / PRNewswire / -- Lockheed Martin (NYSE: '
+         'LMT) will webcast a virtual presentation by Chief Financial Officer '
+         'Jay Malave at Goldman Sachs Industrials and Materials Conference on '
+         'Thursday, May 12, 2022 at 9:40 a.m. to 10:15 a.m. EDT .     Access '
+         'to the webcast will be available at: '
+         'http://www.lockheedmartin.com/investor . An audio replay will be '
+         'available for two weeks following the presentation. About Lockheed '
+         'Martin Headquartered in\xa0Bethesda, Maryland , Lockheed Martin '
+         'Corporation is a global security and aerospace company that employs '
+         'approximately 114,000 people worldwide and is principally engaged in '
+         'the research, design, development, manufacture, integration and '
+         'sustainment of advanced technology systems, products and services. '
+         'Please follow @LMNews on Twitter for the latest announcements and '
+         'news across the corporation. SOURCE  Lockheed Martin',
+ 'title': 'Lockheed Martin Chief Financial Officer to Speak at Goldman Sachs '
+          'Industrials and Materials Conference',
+ 'url': 'https://news.lockheedmartin.com/2022-05-05-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-Goldman-Sachs-Industrials-and-Materials-Conference',
+ 'youtube_urls': []}
+2022-06-20 16:55:56 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2022-06-20 16:55:56 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2022-06-20 16:55:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-09-Littoral-Combat-Ship-29-USS-Beloit-Christened-and-Launched> (referer: https://news.lockheedmartin.com/news-releases?o=10)
+2022-06-20 16:55:56 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://news.lockheedmartin.com/image/LCS-29-1-custom_500x500.jpg> referred in <None>
+2022-06-20 16:55:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-09-Littoral-Combat-Ship-29-USS-Beloit-Christened-and-Launched>
+{'image_urls': [{'checksum': '7ee4dd9b1a56374725d5c0e9d56bef9f',
+                 'path': 'Littoral Combat Ship 29 (USS Beloit) Christened and '
+                         'Launched/f15318d25ed98c318de05c88a266d340be20f7ba.jpeg',
+                 'status': 'uptodate',
+                 'url': 'https://news.lockheedmartin.com/image/LCS-29-1-custom_500x500.jpg'}],
+ 'text': 'MARINETTE, Wisc., May 9, 2022 – The Lockheed Martin (NYSE: LMT)-led '
+         'shipbuilding team launched Littoral Combat Ship (LCS) 29, the future '
+         'USS Beloit. Ship sponsor, Major General Marcia M. Anderson, USA '
+         '(Ret.) christened Littoral Combat Ship LCS 29, the future USS '
+         'Beloit, prior to its launch into the Menominee River at the '
+         'Fincantieri Marinette Marine (FMM) Shipyard on May 7, 2022. '
+         '“Lockheed Martin is confident that the sailors of Littoral Combat '
+         'Ship (LCS) 29, the future USS Beloit, will play a critical role in '
+         'supporting maritime security and deterrence. The LCS '
+         'Freedom-variant, operationally deployed today, is an unmatched and '
+         'highly adaptable warship, designed to outpace the growing threat of '
+         'our adversaries and fulfill the dynamic missions of the U.S. Navy. '
+         'Our team of more than 800 suppliers maintains a strong partnership '
+         'with the U.S. Navy to add lethality and survivability enhancements '
+         'to the highly capable and resilient LCS class.” – Steve Allen, '
+         'Lockheed Martin vice president, Small Combatants and Ship Systems In '
+         '2011, Major General Marcia Anderson was named the first female '
+         'African American officer to earn her second star in the U.S. Army '
+         'reserves. When the former Secretary of the Navy, the Honorable '
+         'Richard Spencer, directed that LCS 29 be named after the City of '
+         'Beloit, he also asked that General Anderson be honored as the ship '
+         'sponsor. “I am honored and excited to be a part of the christening '
+         'and launch of the USS Beloit. As a Beloit native, I am well aware of '
+         'the long history my city has had as it supported our national '
+         'security by not just providing people who served, but also helped '
+         'build the amazing ships and vehicles that have made our military the '
+         'envy of the world. I know the USS Beloit will carry that tradition '
+         'forward as she and her crew become an integral part of our nation’s '
+         'history, and I am happy to be able to play a small role as the '
+         'Sponsor during the life of this great ship.” –Major General Marcia '
+         'M. Anderson, USA (Ret.), Ship Sponsor of the future USS Beloit (LCS '
+         '29) The Lockheed Martin-led LCS team is comprised of shipbuilder '
+         'Fincantieri Marinette Marine, naval architect Gibbs & Cox, and more '
+         'than 800 suppliers in 42 states. Built at the Midwest’s only naval '
+         'shipyard, LCS production supports 12,500 U.S. jobs, including more '
+         'than 7,500 jobs in Wisconsin and Michigan. “Shipbuilding is hard '
+         'work, done by dedicated professionals. And I could not be more proud '
+         'of the work done by our team here in Marinette to get another '
+         'Freedom-class warship built and in the water where she belongs.” – '
+         'Mark Vandroff, Fincantieri Marinette Marine CEO Unique among combat '
+         'ships, LCS is deployed today for close-to-shore missions and is a '
+         'growing and relevant part of the Navy’s fleet. In the last year, '
+         'Freedom-variant Littoral Combat ships have supported the Navy on '
+         'various missions including several counter-illicit drug trafficking '
+         'in the Caribbean and Eastern Pacific resulting in hundreds of '
+         'millions of dollars in narcotics seizures. Its speed, strength and '
+         'versatility make it a critical tool to help sailors achieve their '
+         'missions. Recently, the Freedom-class Littoral Combat Ship for the '
+         'first time has deployed to US 6th Fleet, as a measure of assurance '
+         'for NATO allies and partners in Europe and Africa. LCS 29 is the '
+         '15th Freedom-variant LCS and 29th in the LCS class. It is the first '
+         'ship named in honor of the city of Beloit, Wisconsin. Lockheed '
+         'Martin is in full-rate production and has delivered 11 ships to the '
+         'U.S. Navy. There are five ships in various stages of production. '
+         'Click here  to view additional photos and  here for a B-roll package '
+         '(Password: Beloit) to include ceremony highlights . Background: The '
+         'christening and launch celebrate a major milestone in the life of '
+         'the future USS Beloit (LCS 29) and marks a significant event in the '
+         'history of the nation’s 29 th Littoral Combat Ship. LCS 29 is named '
+         'for Beloit, Wisconsin, and its citizens. It is the first ship to '
+         'bear the name. Beloit and its citizens have been tremendous '
+         'supporters of the Navy and Marine Corps for decades. In Beloit, '
+         'engines for the Freedom-variant LCS are built. These and many other '
+         'contributions of Beloit citizens have made the U.S. Navy stronger, '
+         'more capable and lethal. The Lockheed Martin-led LCS team is '
+         'comprised of shipbuilder Fincantieri Marinette Marine, naval '
+         'architect Gibbs & Cox, and more than 800 suppliers in 42 states. '
+         'Built at the Midwest’s only naval shipyard, LCS production supports '
+         '12,500 U.S. jobs, including more than 7,500 jobs in Wisconsin and '
+         'Michigan. About the Littoral Combat Ship (LCS) The\xa0'
+         'Freedom-variant Littoral Combat Ship\xa0is a resilient, flexible '
+         'warship, designed from the keel up to affordably take on new '
+         'capabilities including advanced sensors, missiles and cutting-edge '
+         'cyber systems. Its speed, strength and versatility make it a '
+         'critical tool to help sailors achieve their missions. For more '
+         'information, please visit www.lockheedmartin.com/lcs . About '
+         'Lockheed Martin Headquartered in Bethesda, Maryland, Lockheed Martin '
+         'Corporation is a global security and aerospace company that employs '
+         'approximately 114,000 people worldwide and is principally engaged in '
+         'the research, design, development, manufacture, integration and '
+         'sustainment of advanced technology systems, products and services. '
+         'Please follow @LMNews on Twitter for the latest announcements and '
+         'news across the corporation. About Fincantieri Marine Group '
+         'Fincantieri operates in the United States through its subsidiary '
+         'Fincantieri Marine Group (FMG). This company, which serves '
+         'commercial and government customers in the U.S., including the U.S. '
+         'Navy and Coast Guard, has three shipyards (Fincantieri Marinette '
+         'Marine, Fincantieri Bay Shipbuilding and Fincantieri ACE Marine) '
+         'located in the Great Lakes. www.fincantierimarinegroup.com About '
+         'Gibbs & Cox Gibbs & Cox, the nation’s leading independent maritime '
+         'solutions firm specializing in naval architecture, marine '
+         'engineering and design, is headquartered in Arlington, Virginia. The '
+         'company, founded in 1929, has provided designs for nearly 80 percent '
+         'of the current U.S. Navy surface combatant fleet; approaching 7,000 '
+         'naval and commercial ships have been built to Gibbs & Cox designs. ',
+ 'title': 'Littoral Combat Ship 29 (USS Beloit) Christened and Launched',
+ 'url': 'https://news.lockheedmartin.com/2022-05-09-Littoral-Combat-Ship-29-USS-Beloit-Christened-and-Launched',
+ 'youtube_urls': []}
+2022-06-20 16:55:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-10-lockheed-martin-delivers-long-range-precision-strike-missile-system-on-joint-light-tactical-vehicles> (referer: https://news.lockheedmartin.com/news-releases?o=10)
+2022-06-20 16:55:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-10-lockheed-martin-delivers-long-range-precision-strike-missile-system-on-joint-light-tactical-vehicles>
+{'image_urls': [],
+ 'text': 'ORLANDO , Fla., May 10, 2022 - Lockheed Martin [NYSE: LMT] '
+         'successfully delivered the Spike Non-Line-of-Sight (NLOS) missile '
+         'system on the Oshkosh’s Joint Light Tactical Vehicle (JLTV) to US '
+         'Special Operations Command (USSOCOM). This integration demonstrates '
+         'the versatility of the Spike NLOS weapon system. “The combination of '
+         'Spike NLOS’s long-range and precision-strike capabilities with the '
+         'JLTV’s superior agility will result in next-level mobility and '
+         'mission effectiveness for our operators,” said Jerry Brode, vice '
+         'president of Close Combat Systems at Lockheed Martin Missiles and '
+         'Fire Control. “This advanced weapon system’s real-time video imagery '
+         'allows operators to alter or abort mission while en route to a '
+         'target, providing users with more options in critical moments.” '
+         'Spike NLOS is a multi-purpose, electro-optical/infrared missile '
+         'system. Its advanced rocket motor provides capability to reach '
+         'ranges up to 32 kilometers. Users can integrate Spike NLOS with '
+         'ground, aviation or maritime platforms – while leveraging its '
+         'stand-off capability to strike distant or geographically concealed '
+         'targets without line-of-sight. Using a Lockheed Martin developed '
+         'remote launcher, the weapon system can be mounted directly onto '
+         'almost any vehicle with a standard palletized interface in less than '
+         '20 minutes, without any vehicle modifications. Today, this '
+         'combat-proven, long-range precision strike system is in service with '
+         'U.S. forces and six international countries. About Lockheed Martin '
+         'Headquartered in Bethesda, Maryland, Lockheed Martin Corporation is '
+         'a global security and aerospace company that employs approximately '
+         '114,000 people worldwide and is principally engaged in the research, '
+         'design, development, manufacture, integration and sustainment of '
+         'advanced technology systems, products and services. Please follow '
+         '@LMNews on Twitter for the latest announcements and news across the '
+         'corporation.',
+ 'title': 'Lockheed Martin Delivers Long-Range Precision Strike Missile System '
+          'on Joint Light Tactical Vehicles',
+ 'url': 'https://news.lockheedmartin.com/2022-05-10-lockheed-martin-delivers-long-range-precision-strike-missile-system-on-joint-light-tactical-vehicles',
+ 'youtube_urls': []}
+2022-06-20 16:55:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-12-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-BofA-Securities-29th-Annual-Transportation,-Airlines-and-Industrials-Conference> (referer: https://news.lockheedmartin.com/news-releases?o=10)
+2022-06-20 16:55:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-12-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-BofA-Securities-29th-Annual-Transportation,-Airlines-and-Industrials-Conference>
+{'image_urls': [],
+ 'text': 'BETHESDA, Md. , May 12, 2022 / PRNewswire / -- Lockheed Martin '
+         '(NYSE: LMT) will webcast live a presentation by Chief Financial '
+         'Officer Jay Malave at BofA Securities 29 th Annual Transportation, '
+         'Airlines and Industrials Conference on Thursday, May 19, 2022 at '
+         '10:00 a.m. to 10:35 a.m. EDT .     Access to the webcast will be '
+         'available at: http://www.lockheedmartin.com/investor . An audio '
+         'replay will be available for two weeks following the presentation. '
+         'About Lockheed Martin Headquartered in\xa0Bethesda, Maryland , '
+         'Lockheed Martin Corporation is a global security and aerospace '
+         'company that employs approximately 114,000 people worldwide and is '
+         'principally engaged in the research, design, development, '
+         'manufacture, integration and sustainment of advanced technology '
+         'systems, products and services. Please follow @LMNews on Twitter for '
+         'the latest announcements and news across the corporation.  SOURCE  '
+         'Lockheed Martin',
+ 'title': 'Lockheed Martin Chief Financial Officer to Speak at BofA Securities '
+          '29th Annual Transportation, Airlines and Industrials Conference',
+ 'url': 'https://news.lockheedmartin.com/2022-05-12-Lockheed-Martin-Chief-Financial-Officer-to-Speak-at-BofA-Securities-29th-Annual-Transportation,-Airlines-and-Industrials-Conference',
+ 'youtube_urls': []}
+2022-06-20 16:55:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-05-04-Lockheed-Martins-First-TPY-4-Radar-Completes-Production-Bringing-Unmatched-Tracking-Precision-and-Speed-to-the-US-and-its-Allies> (referer: https://news.lockheedmartin.com/news-releases?o=15)
+2022-06-20 16:55:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://news.lockheedmartin.com/image/TPY-4-2-custom_500x500.png> referred in <None>
+2022-06-20 16:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-05-04-Lockheed-Martins-First-TPY-4-Radar-Completes-Production-Bringing-Unmatched-Tracking-Precision-and-Speed-to-the-US-and-its-Allies>
+{'image_urls': [{'checksum': 'dc3786662b5132b08cfa0c3de2068dc4',
+                 'path': 'Lockheed Martin’s First TPY-4 Radar Completes '
+                         'Production, Bringing Unmatched Tracking Precision '
+                         'and Speed to the U.S. and its '
+                         'Allies/00d5f066515b8239772e955aac4d444f47a4b7df.jpeg',
+                 'status': 'uptodate',
+                 'url': 'https://news.lockheedmartin.com/image/TPY-4-2-custom_500x500.png'}],
+ 'text': 'Syracuse, New York, May 4, 2022 – The world’s most advanced and '
+         'capable transportable or fixed air defense long-range radar, '
+         'Lockheed Martin’s first AN/TPY-4 radar – recently selected by the '
+         'U.S. Air Force for the Three Dimensional Expeditionary Long Range '
+         'Radar (3DELRR) Rapid Prototyping program – has completed production '
+         'marking availability to the world.\xa0 The technology that enables '
+         'TPY-4 provides the capability required for today’s threats and '
+         'unprecedented flexibility to adjust quickly to those that emerge '
+         'over time. “Lockheed Martin is committed to investing in advanced '
+         'defense technology, and the TPY-4 radar is a direct result of those '
+         'investments,” said Rick Herodes, Director of Ground Based Air '
+         'Surveillance Radars at Lockheed Martin. “TPY-4 meets the needs of a '
+         'rapidly changing battlefields, marked by technological growth and '
+         'the emergence of increasingly challenging threats.” Milestones & '
+         'Maturity Development Lockheed Martin has been on the fast track to '
+         'provide this radar both in the U.S. and internationally. In March, '
+         'the U.S. Air Force selected the TPY-4 radar as the best radar for '
+         'the 3DELRR program. The 3DELRR contract includes production options '
+         'for 35 long-range radar systems, planned to reach Initial '
+         'Operational Capability. In July 2021, the radar received official '
+         'nomenclature from the U.S. Government and Kongsberg Defence & '
+         'Aerospace (KDA) delivered the Platform Electronics Subsystem (PES) '
+         'for the first TPY-4 radar. The Lockheed Martin and KDA partnership '
+         'leverages Lockheed Martin’s state of the art radar technology and '
+         'KDA’s experience in defense industry solutions, resulting in a next '
+         'generation sensor that meets and exceeds current long range '
+         'surveillance requirements. The World’s First Truly Software-Defined '
+         'Radar TPY 4 is intentionally designed as a multi-mission system '
+         'capable of tracking current and emerging threats, and will integrate '
+         'seamlessly into existing air defense systems. TPY-4 is an '
+         'internationally available, transportable, multi-mission radar that '
+         'can operate in contested RF environments. The radar integrates the '
+         'latest mature commercial technologies to create a revolutionary '
+         'radar architecture. The radar system is fully digital at every '
+         'transmit/receive element with an unprecedented software-defined '
+         'sensor architecture, allowing the radar to quickly adjust to '
+         'tomorrow’s threats and missions. It’s individually '
+         'software-controlled digital transmitters and receivers provide '
+         'flexibility to quickly change performance for new missions and '
+         'environments while providing ease of adaptation to future advanced '
+         'threats. Performance and operational changes can be made rapidly via '
+         'software enhancements without the design or hardware changes '
+         'required by older radar architectures. TPY-4 outperforms other '
+         'systems in these key areas: Target Detection: TPY-4 detects smaller, '
+         'harder-to-detect next generation threats in heavy clutter. Mission '
+         'Diversity: The radar operators can quickly pivot from one mission to '
+         'another, enabling them to address threats in a contested '
+         'environment. The radar will operate in extreme climates and '
+         'environments. Software Defined: The system is digital at every '
+         'element with operation and performance defined software enabling '
+         'quick upgrades to combat emerging threats. TPY-4 adheres to open '
+         'hardware, software, and interface standards to ensure long-term '
+         'supportability and ease of integration. Transportability: The system '
+         'is available in both fixed and transportable variants able to be '
+         'transported via C-130, C-17, truck, rail, or helicopter. About '
+         'Lockheed Martin Headquartered in Bethesda, Maryland, Lockheed Martin '
+         'is a global security and aerospace company that employs '
+         'approximately 114,000 people worldwide and is principally engaged in '
+         'the research, design, development, manufacture, integration and '
+         'sustainment of advanced technology systems, products and services. '
+         'Please follow\xa0@LMNews\xa0on Twitter for the latest announcements '
+         'and news across the corporation. ',
+ 'title': 'Lockheed Martin’s First TPY-4 Radar Completes Production, Bringing '
+          'Unmatched Tracking Precision and Speed to the U.S. and its Allies',
+ 'url': 'https://news.lockheedmartin.com/2022-05-04-Lockheed-Martins-First-TPY-4-Radar-Completes-Production-Bringing-Unmatched-Tracking-Precision-and-Speed-to-the-US-and-its-Allies',
+ 'youtube_urls': []}
+2022-06-20 16:55:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/news-releases?o=20> (referer: https://news.lockheedmartin.com/news-releases?o=15)
+2022-06-20 16:55:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-04-21-lockheed-martin-to-produce-eighth-thaad-battery-for-the-us-government> (referer: https://news.lockheedmartin.com/news-releases?o=15)
+2022-06-20 16:55:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-04-21-lockheed-martin-to-produce-eighth-thaad-battery-for-the-us-government>
+{'image_urls': [],
+ 'text': 'DALLAS, April 21, 2022 – Lockheed Martin (NYSE: LMT) has received a '
+         'contract totaling\xa0$74 million\xa0to produce the Terminal High '
+         'Altitude Area Defense (THAAD) Weapon System for the Missile Defense '
+         'Agency (MDA). The award amount covers the production of an eighth '
+         'THAAD battery for the U.S. government. It’s expected to be fielded '
+         'by 2025. “This award demonstrates the U.S. government’s continued '
+         'confidence in the THAAD Weapon System and in its unique endo- and '
+         'exo-atmospheric defense capability,” said Dan Nimblett, Vice '
+         'President of Upper Tier Integrated Air and Missile Defense at '
+         'Lockheed Martin Missiles and Fire Control. “With 16 of 16 successful '
+         'flight test intercepts and recent combat success clearly documenting '
+         'the effectiveness of THAAD, adding an eighth battery will further '
+         'enhance readiness against existing and evolving ballistic missile '
+         'threats.” The first THAAD Battery (Alpha Battery, 4th Air Defense '
+         'Artillery Regiment, 11th Air Defense Artillery Brigade) was '
+         'activated in May 2008 and the seventh THAAD battery was activated by '
+         'the U.S. Army in December 2016. THAAD is a highly effective, '
+         'combat-proven defense against short, medium and intermediate-range '
+         'ballistic missile threats. THAAD is the only U.S. system designed to '
+         'intercept targets outside and inside the atmosphere. The system uses '
+         'Hit-to-Kill technology to destroy a threat with direct impact '
+         'neutralizing lethal payloads before they reach protected assets on '
+         'the ground. THAAD continues incremental capability improvements '
+         'within the weapon system to continually improve capability against '
+         'current and emerging threats. About Lockheed Martin Headquartered in '
+         'Bethesda, Maryland, Lockheed Martin Corporation is a global security '
+         'and aerospace company that employs approximately 114,000 people '
+         'worldwide and is principally engaged in the research, design, '
+         'development, manufacture, integration and sustainment of advanced '
+         'technology systems, products and services. Please follow @LMNews on '
+         'Twitter for the latest announcements and news across the '
+         'corporation.',
+ 'title': 'Lockheed Martin to Produce Eighth THAAD Battery for the US '
+          'Government',
+ 'url': 'https://news.lockheedmartin.com/2022-04-21-lockheed-martin-to-produce-eighth-thaad-battery-for-the-us-government',
+ 'youtube_urls': []}
+2022-06-20 16:55:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-04-21-Lockheed-Martin-Forecasts-Job-Growth-in-Pennsylvania-and-Florida-in-2022> (referer: https://news.lockheedmartin.com/news-releases?o=15)
+2022-06-20 16:55:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-04-21-Lockheed-Martin-Forecasts-Job-Growth-in-Pennsylvania-and-Florida-in-2022>
+{'image_urls': [],
+ 'text': 'FORT WORTH, Texas , April 21, 2022 / PRNewswire / -- Lockheed Martin '
+         '(NYSE:LMT) is announcing the grand opening of\xa0a new facility that '
+         'expands its Johnstown, Pennsylvania , operations. The Johnstown '
+         'business expects to hire more than 80 mechanics and technicians in '
+         'the next year to support component production for the newest F-16s '
+         'being manufactured in Greenville, South Carolina . In conjunction, '
+         'Lockheed Martin is celebrating 25 years in Pinellas Park, Florida , '
+         'and its ongoing commitment to growing job opportunities in Florida – '
+         'to include at least 50 new jobs over the next two years. "At '
+         "Lockheed Martin, we're driven by a sense of purpose and passion to "
+         'shape the future and solve the world\'s most difficult challenges," '
+         'said Nick Drazic , Operations vice president for Lockheed Martin '
+         'Aeronautics. "We bring that same passion and purpose to our '
+         'communities, where our employees play an active role in '
+         'strengthening the quality of life where we live and work." Johnstown '
+         ': The Johnstown facility opened in 1987 and produces components for '
+         'the C-130A-J Super Hercules, F-35 Lightning II and F-16 Falcon '
+         'aircraft. The site also supports sustainment efforts for the '
+         'C-130A-J, LM-100J, F-16, F-22 Raptor, P-3 Orion and C-5 Galaxy '
+         'aircraft programs. "We are proud to bring the new F-16 manufacturing '
+         'work to our Johnstown site and contribute to the creation of more '
+         'jobs in the area," Wayne Davis , Lockheed Martin Johnstown '
+         'general \xa0manager, said. "The selection of Johnstown for this work '
+         'is a reflection of the highly skilled workforce in the area and a '
+         'testament to the team\'s focus on delivering for our customers." The '
+         'F-16 parts that will now be produced in Johnstown include the aft '
+         'engine access covers, engine access doors, F-1 fuel tank and inlet. '
+         'Upon completion in Johnstown , the parts will be shipped to '
+         'Greenville, South Carolina , for final assembly and integration into '
+         'the F-16s on the production line. This is in addition to the F-16 '
+         'component and sub-assembly work already performed at the site today. '
+         'Pinellas Park : Over the past 25 years, the Pinellas Park facility '
+         'has become a Canopy Center of Excellence, building both production '
+         'and sustainment canopies for F-35 and F-16 aircraft. They also work '
+         'on parts and components for the F-35, F-16 and C-130J. The team has '
+         'driven innovation, efficiency, and focus, while setting industry '
+         'benchmarks in the manufacturing process by reducing build times by '
+         '50%. "It truly is an exciting time to be at Pinellas Park ," said '
+         'Lindsay Muth , Lockheed Martin Pinellas Park general manager. "We '
+         'have a world-class team that produces world-class results; and that '
+         "shows through our products and our culture. We're proud to celebrate "
+         '25 years in Pinellas Park and look forward to continuously growing '
+         'employment opportunities and partnering with our local community." '
+         'For additional information, visit our website: '
+         'www.lockheedmartin.com . About Lockheed Martin Headquartered in '
+         'Bethesda, Maryland , Lockheed Martin Corporation is a global '
+         'security and aerospace company that employs approximately 114,000 '
+         'people worldwide and is principally engaged in the research, design, '
+         'development, manufacture, integration and sustainment of advanced '
+         'technology systems, products and services. Please follow @LMNews on '
+         'Twitter for the latest announcements and news across the '
+         'corporation. SOURCE  Lockheed Martin Aeronautics',
+ 'title': 'Lockheed Martin Forecasts Job Growth in Pennsylvania and Florida in '
+          '2022',
+ 'url': 'https://news.lockheedmartin.com/2022-04-21-Lockheed-Martin-Forecasts-Job-Growth-in-Pennsylvania-and-Florida-in-2022',
+ 'youtube_urls': []}
+2022-06-20 16:56:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-04-25-Lockheed-Martins-Marietta-Site-to-Host-Same-Day-Hiring-Decision-Event> (referer: https://news.lockheedmartin.com/news-releases?o=15)
+2022-06-20 16:56:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-04-25-Lockheed-Martins-Marietta-Site-to-Host-Same-Day-Hiring-Decision-Event>
+{'image_urls': [],
+ 'text': "Event taking place at Kennesaw State University's  Marietta Campus "
+         'on May 4, 2022 MARIETTA, Ga. , April 25, 2022 / PRNewswire / -- '
+         'Representatives from Lockheed Martin (NYSE: LMT) will be at Kennesaw '
+         'State University , Marietta Campus Student Center at 860 Rossbacher '
+         'Way, Marietta, Georgia , 30060 on May 4 from 9 a.m. to 6 p.m. to '
+         'conduct interviews and make same-day hiring decisions. The company '
+         'is looking to fill nearly 200 positions.     This event is for '
+         'candidates who meet the basic qualifications for critical C-130J '
+         'Super Hercules and F-35 Center Wing production hourly positions, to '
+         'include structures mechanics, coaters, painters, electrical and '
+         'electronics mechanics. Interested individuals must register for the '
+         'event at tinyurl.com/5abnbcnb to be considered for an interview. '
+         'Candidates joining the team could receive up to a $15,000 sign-on '
+         'bonus. "We have a strong future in the C-130J and F-35 Center Wing '
+         'programs with a growing backlog and continued domestic and '
+         'international interest in our aircraft," said David Coffman , vice '
+         'president, Air Mobility & Maritime Missions Production Operations. '
+         '"This hiring event provides a great opportunity to join a team with '
+         "a deep-rooted culture focused on our global customers. It's an "
+         'opportunity for long-term career development and the chance to be '
+         "part of the world's longest continuous military aircraft production "
+         'operation in history." Lockheed Martin has produced aircraft at its '
+         'Marietta site since 1951. Every production C-130 Hercules airlifter '
+         '— more than 2,600 delivered to date — has been produced in Marietta '
+         'since 1954. More than 4,500 employees currently work at the site, '
+         'supporting work on the C-130J Super Hercules final assembly and the '
+         'F-35 Lightning II center wing assembly production lines. With 3.4 '
+         "million square feet of production space, some of history's most "
+         'iconic aircraft have been built in Marietta , including the F-22 '
+         'Raptor, C-5 Galaxy/C-5M Super Galaxy, P-3 Orion and the C-141 '
+         'Starlifter. The facility (officially known as Air Force Plant 6) '
+         'first opened in 1943 to support the manufacturing of B-29 bombers by '
+         'the Bell Bomber Corporation. Click here to learn more about the '
+         'C-130J program. About Lockheed Martin Headquartered in Bethesda, '
+         'Maryland , Lockheed Martin Corporation is a global security and '
+         'aerospace company that employs approximately 114,000 people '
+         'worldwide and is principally engaged in the research, design, '
+         'development, manufacture, integration and sustainment of advanced '
+         'technology systems, products and services. Please follow @LMNews on '
+         'Twitter for the latest announcements and news across the '
+         'corporation.     SOURCE  Lockheed Martin Aeronautics',
+ 'title': "Lockheed Martin's Marietta Site to Host Same-Day Hiring Decision "
+          'Event',
+ 'url': 'https://news.lockheedmartin.com/2022-04-25-Lockheed-Martins-Marietta-Site-to-Host-Same-Day-Hiring-Decision-Event',
+ 'youtube_urls': []}
+2022-06-20 16:56:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.lockheedmartin.com/2022-04-25-U-S-Marine-Corps-Declares-Initial-Operational-Capability-of-Sikorsky-CH-53K-R> (referer: https://news.lockheedmartin.com/news-releases?o=15)
+2022-06-20 16:56:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.lockheedmartin.com/2022-04-25-U-S-Marine-Corps-Declares-Initial-Operational-Capability-of-Sikorsky-CH-53K-R>
+{'image_urls': [],
+ 'text': 'Major milestone for the most modern and \xa0powerful helicopter in '
+         'DoD inventory STRATFORD, Conn. , April 25, 2022 / PRNewswire / -- '
+         'The U.S. Marine Corps declared Initial Operational Capability (IOC) '
+         "for the CH-53K heavy lift helicopter, validating the platform's "
+         'operational readiness to forward deploy Marines and equipment across '
+         'the globe. Sikorsky, a Lockheed Martin Company (NYSE: LMT) designed '
+         'and manufactures the CH-53K , which enables the U.S. Marine Corps '
+         'and international militaries to move troops and equipment from ship '
+         'to shore, and to higher altitude terrain, more quickly and '
+         'effectively than ever before.     "This declaration is a vote of '
+         'confidence from Marine Corps leadership and demonstrates the '
+         'critical role of the CH-53K, giving forces more range and agility to '
+         'conduct expeditionary heavy-lift assault transport of armored '
+         'vehicles, equipment, and personnel. This capability is critical in '
+         'the Indo-Pacific region and around the globe in support of the joint '
+         'force and allies," said Sikorsky President Paul Lemmo . "Sikorsky '
+         'and our nationwide CH-53K supply chain, including dozens of small '
+         'businesses, are committed to delivering aircraft that can adapt to '
+         'future missions and are reliable, sustainable and relevant for '
+         'decades to come." The path to CH-53K IOC included collaboration on '
+         'Initial Operational Testing & Evaluation among Sikorsky, the U.S. '
+         'Navy and U.S. Marine Corps to develop, test and validate the '
+         'advanced capabilities of this 21 st century aircraft. Marines have '
+         'been flying and supporting the CH-53K in the fleet environment '
+         'demonstrating the aircraft is on track to fully deploy on schedule. '
+         'The aircraft have flown more than 3,000 flight hours showcasing the '
+         "CH-53K's performance in a range of mission scenarios including "
+         'extreme cold and hot environments. Other accomplishments include: '
+         'The IOC declaration positions the Marine Corps for a full rate '
+         'production decision in 2023. The Approved Acquisition Objective is '
+         '200 aircraft. The CH-53K high-tech production line in Stratford, '
+         'Connecticut , is active with seven aircraft in build, including '
+         'three on schedule to deliver to the Marine Corps this year. There '
+         'are 46 aircraft fully on contract including four heavy-lift '
+         'helicopters for the government of Israel and another 14 aircraft on '
+         'contract for long lead material. The helicopters for Israel are '
+         'under a U.S. Navy Foreign Military Sales (FMS) agreement. The CH-53K '
+         'program leverages digital thread technologies to achieve sustainment '
+         'savings as well as increased performance and readiness. The digital '
+         'thread permeates design, manufacture, operation, and sustainment of '
+         'the CH-53K. The CH-53K has been specifically designed with a '
+         'digitally-enhanced modern maintenance support environment to '
+         "dramatically improve the maintainer's experience. Increased "
+         'readiness of the CH-53K will be enabled by leveraging the current '
+         'success of the CH-53E, an aircraft specifically designed for '
+         'maintainability. Sikorsky has unmatched experience providing parts, '
+         'integrated logistics, best-in-class fleet data analytics, support '
+         'services and a DoD award-winning Performance Based Logistics '
+         'agreement to the U.S. Marine Corps and its CH-53E Super Stallion '
+         'fleet for 38 years. For additional information, visit our website: '
+         'www.lockheedmartin.com/ch53k . About Lockheed Martin Headquartered '
+         'in Bethesda, Maryland , Lockheed Martin Corporation is a global '
+         'security and aerospace company that employs approximately 114,000 '
+         'people worldwide and is principally engaged in the research, design, '
+         'development, manufacture, integration and sustainment of advanced '
+         'technology systems, products, and services. Please follow @LMNews on '
+         'Twitter for the latest announcements and news across the '
+         'corporation.      SOURCE  Lockheed Martin',
+ 'title': 'U.S. Marine Corps Declares Initial Operational Capability of '
+          'Sikorsky CH-53K®',
+ 'url': 'https://news.lockheedmartin.com/2022-04-25-U-S-Marine-Corps-Declares-Initial-Operational-Capability-of-Sikorsky-CH-53K-R',
+ 'youtube_urls': []}
+2022-06-20 16:56:00 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 17668,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 496134,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 25,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 12.942622,
+ 'file_count': 6,
+ 'file_status_count/uptodate': 6,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2022, 6, 20, 13, 56, 0, 774672),
+ 'httpcompression/response_bytes': 3399017,
+ 'httpcompression/response_count': 26,
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 55,
+ 'log_count/INFO': 13,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 64962560,
+ 'memusage/startup': 64962560,
+ 'request_depth_max': 5,
+ 'response_received_count': 26,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 31,
+ 'scheduler/enqueued/memory': 31,
+ 'start_time': datetime.datetime(2022, 6, 20, 13, 55, 47, 832050)}
+2022-06-20 16:56:00 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2022-06-20 16:56:00 [scrapy.core.engine] INFO: Error while scheduling new request
+Traceback (most recent call last):
+  File "/home/sev/anaconda3/lib/python3.7/site-packages/twisted/internet/task.py", line 526, in _oneWorkUnit
+    result = next(self._iterator)
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sev/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/sev/anaconda3/lib/python3.7/site-packages/scrapy/core/engine.py", line 187, in <lambda>
+    d.addBoth(lambda _: self.slot.nextcall.schedule())
+AttributeError: 'NoneType' object has no attribute 'nextcall'
